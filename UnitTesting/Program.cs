@@ -13,8 +13,13 @@ namespace UnitTesting
         {
             Library = new Library<Book>();
             BookBag = new Library<Book>();
+            Console.WriteLine("Welcome to the library");
+            Console.WriteLine("Entwer a number for the command you want. 1: View Books 2: Add a book");
+            string input = Console.ReadLine();
 
+            if(input == "1")
             LoadBooks();
+
         }
 
         static void LoadBooks()
